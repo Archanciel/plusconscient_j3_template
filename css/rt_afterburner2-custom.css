@@ -27,7 +27,7 @@ body {background-attachment: fixed;background-color: #0C3045;background-image: u
 .gf-menu .dropdown li:hover > .item, .gf-menu .dropdown li.active > .item, .gf-menu .dropdown ul li:hover > .item {background-color: rgba(84, 120, 32, 0.02);background-image: -moz-linear-gradient(left center , transparent, rgba(112, 160, 43, 0.3) 30%, #70A02B);background-repeat: no-repeat;color: #B7DD7E;}
 .gf-menu .dropdown li:hover:before, .gf-menu .dropdown li:hover:after, .gf-menu .dropdown li.active:before, .gf-menu .dropdown li.active:after {background-color: rgba(235, 167, 74, 0.02);background-image: -moz-linear-gradient(left center , transparent, rgba(235, 167, 74, 0.2) 30%, rgba(235, 167, 74, 0.7));background-repeat: no-repeat;}
 .gf-menu .dropdown li:hover > .flyout {border-top: 0 none;left: 100%;margin-left: -1px;top: 0;}
-.gf-menu .dropdown ul li.parent > .item:after {content: "";font-family: FontAwesome;font-size: 11px;margin-top: -10px;position:absolute;right:10px;top:50%;}
+.gf-menu .dropdown ul li.parent > .item:after {content: "";font-family: FontAwesome;font-size: 11px;margin-top: -8px;position:absolute;right:10px;top:50%;}
 .gf-menu li.parent > .item:after {content: "";font-family: FontAwesome;font-size: 11px;margin-top: 0;position: absolute;right: 5px;top: 0;}
 .gf-menu.l1 > li > .item:after {border-right: none;}
 .gf-menu.l1 > li > .item {border-right: none;}
