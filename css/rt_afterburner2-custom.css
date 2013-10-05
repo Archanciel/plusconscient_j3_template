@@ -48,6 +48,19 @@ ul.menu li.active.current > a, ul.menu li.active.current > .item, ul.menu li.act
     margin-top: 1px;
 }
 
+/* JPS 04.10.2013 */
+.gf-menu .item {
+    cursor: pointer;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    outline: 0 none;
+    padding: 8px 12px;
+    text-align: left;
+    text-decoration: none;
+}
+
 /*  Typography  */
 body {color: #ADD8F0;}
 h1, h2, h3, h4, h5, h6 {color: #B7DD7E;}
