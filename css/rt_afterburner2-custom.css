@@ -31,7 +31,7 @@ body {background-attachment: fixed;background-color: #0C3045;background-image: u
 .gf-menu li.parent > .item:after {content: "";font-family: FontAwesome;font-size: 11px;margin-top: 0;position: absolute;right: 5px;top: 0;}
 .gf-menu.l1 > li > .item:after {border-right: none;}
 .gf-menu.l1 > li > .item {border-right: none;}
-.plusbox ul.menu li a, .plusbox ul.menu li .item, .plusbox ul.menu li .separator {background: url("../images/arrow-bullet.png") no-repeat scroll 0 50% transparent;color: #78A92D;display: block;font-size: 0.9em;font-weight: normal;line-height: 1.2em;padding-left: 15px;}
+.plusbox ul.menu li a, .plusbox ul.menu li .item, .plusbox ul.menu li .separator {background: url("../images/arrow-bullet.png") no-repeat scroll 0 50% transparent;color: #78A92D;display: block;font-family: Tahoma,Arial,Helvetica,Sans-Serif;font-size: 12px;font-weight: normal;line-height: 1.2em;padding-left: 15px;}
 .plusbox ul.menu li a:hover, .plusbox ul.menu li:hover .item, .plusbox ul.menu li:hover .separator {color: #D6ECB6; text-decoration:underline;}
 .plusbox ul.menu li.active.current > a:before, .plusbox ul.menu li.active.current > .item:before, .plusbox ul.menu li.active.current > .separator:before, .plusbox ul.menu li#current.active > a:before, .plusbox ul.menu li#current.active > .item:before, .plusbox ul.menu li#current.active > .separator:before {content: none;}
 ul.menu li a:before, ul.menu li .item:before, ul.menu li .separator:before {content: none;}
@@ -61,6 +61,15 @@ ul.menu li.active.current > a, ul.menu li.active.current > .item, ul.menu li.act
     text-decoration: none;
 }
 
+/* JPS 07.10.2013 */
+.plusbox ul.menu {
+    margin: -6px;
+}
+
+ul.menu li {
+    margin-bottom: 5px;
+}
+
 /*  Typography  */
 body {color: #ADD8F0;}
 h1, h2, h3, h4, h5, h6 {color: #B7DD7E;}
@@ -74,7 +83,7 @@ h2 a:hover {color: #94E042;text-decoration: none;}
 
 /*  Modules  */
 #rt-mainbody-surround .plusbox {background: url("../images/module-content-bg.jpg") repeat scroll 0 0 transparent;color: #78A92D;}
-.plusbox {border-radius: 8px 8px 8px 8px;border: 2px solid #BEBEBE;box-shadow:1px 1px 2px #000000;}
+.plusbox {border-radius: 10px 10px 10px 10px;border: 2px solid #BEBEBE;box-shadow:1px 1px 2px #000000;}
 .plusbox .module-title {background: url("../images/module-header.jpg") repeat scroll 0px 0px transparent;border-radius: 5px 5px 0px 0px;margin: -15px -15px 0px;padding: 0px 15px;}
 .plusbox .module-title h2.title {color:#000000;font-weight:normal;font-size:1em;font-variant:small-caps;background: url("../images/module-header-icon.png") no-repeat scroll 0 50% transparent;padding-left:25px;}
 .menu-block .rt-mini-icon[class^="icon-"], .rt-mini-icon[class*=" icon-"] {background-color: #335533;font-size: 1.5em;height: 30px;line-height: 30px;margin-right: 5px;margin-top: 5px;width: 30px;}
