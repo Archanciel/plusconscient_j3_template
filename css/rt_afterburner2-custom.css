@@ -75,6 +75,16 @@ ul.menu li {
     padding: 5px 0 0;
 }
 
+.component-content .column-1 {
+  padding-right: 11px;
+  width: 48%;
+}
+
+.component-content .column-2 {
+  padding-left: 10px;
+  width: 48%;
+}
+
 /*  Typography  */
 body {color: #ADD8F0;}
 h1, h2, h3, h4, h5, h6 {color: #B7DD7E;}
@@ -99,17 +109,17 @@ h2 a:hover {color: #94E042;text-decoration: none;}
 
 /* Large Display */
 @media (min-width: 1200px) {
-  .component-content .cols-2 .column-1 {border-right: 1px dashed;float: left;width: 50%;}
+  .component-content .cols-2 .column-1 {border-right: 1px dashed;float: left;width: 48%;}
 } 
 
 /* Desktop */
 @media (min-width: 960px) and (max-width: 1199px) {
-  .component-content .cols-2 .column-1 {border-right: 1px dashed;float: left;width: 50%;}
+  .component-content .cols-2 .column-1 {border-right: 1px dashed;float: left;width: 48%;}
 }
      
 /* Tablets */
 @media (min-width: 768px) and (max-width: 959px) {
-  .component-content .cols-2 .column-1 {border-right: 1px dashed;float: left;width: 50%;}
+  .component-content .cols-2 .column-1 {border-right: 1px dashed;float: left;width: 48%;}
 }
      
 /* Smartphones to Tablets */
