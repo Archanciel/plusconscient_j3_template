@@ -14,7 +14,7 @@ body {background-attachment: fixed;background-color: #0C3045;background-image: u
 #rt-top .rt-container {background: url("../images/Header.jpg") no-repeat scroll 0 0 transparent;z-index: -1;}
 #rt-main .rt-container {background: none repeat scroll 0% 0% transparent;}
 .rt-container {background:none rgba(95, 177, 227, 0.4);}
-#rt-top .rt-container {border-radius: 20px 20px 0px 0px;overflow:hidden;}
+#rt-top .rt-container {border-radius: 15px 15px 0px 0px;overflow:hidden;}
 
 /*  Menu  */
 .gf-menu {background: none repeat scroll 0 0 transparent;border-radius: 0 0 0 0;display: inline-block;list-style: none outside none;margin: 0;box-shadow: none;}
@@ -83,6 +83,31 @@ ul.menu li {
   padding-left: 10px;
 }
 
+/* JPS 11.10.2013 */
+ul.latestnewsplusbox {
+    margin-bottom: -6px;
+    margin-left: 0;
+    margin-top: -6px;
+}
+
+ul.latestnewsplusbox li {
+  background: url("../images/arrow-bullet.png") no-repeat scroll 0 50% transparent;
+  list-style-type: none;
+  color: #D6ECB6;
+  display: block;
+  font-family: Tahoma,Arial,Helvetica,Sans-Serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14.4px;
+  margin-left: -6px;
+  padding-left: 15px;
+  padding-bottom: 4px;
+}
+
+ul.latestnewsplusbox li:hover {
+  color: #78A92D; /* not working */
+}
+
 /*  Typography  */
 body {color: #ADD8F0;}
 h1, h2, h3, h4, h5, h6 {color: #B7DD7E;}
@@ -93,6 +118,7 @@ h1.logo-name {display: block;text-align: center;}
 #slogan-text {font-weight: bold;margin: 20px 0px;text-align: center;width: 100%;font-size:1.4em;color:#ffffff;}
 h2 a {color: #94E042;text-decoration: underline;}
 h2 a:hover {color: #94E042;text-decoration: none;}
+.component-content h2 {padding-left:30px;background: url("../images/PostHeaderIcon.png") no-repeat scroll 0 50% transparent;}
 
 /*  Modules  */
 #rt-mainbody-surround .plusbox {background: url("../images/module-content-bg.jpg") repeat scroll 0 0 transparent;color: #78A92D;}
