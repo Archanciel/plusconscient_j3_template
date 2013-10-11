@@ -93,6 +93,7 @@ h1.logo-name {display: block;text-align: center;}
 #slogan-text {font-weight: bold;margin: 20px 0px;text-align: center;width: 100%;font-size:1.4em;color:#ffffff;}
 h2 a {color: #94E042;text-decoration: underline;}
 h2 a:hover {color: #94E042;text-decoration: none;}
+.component-content h2 {padding-left:30px;background: url("../images/PostHeaderIcon.png") no-repeat scroll 0 50% transparent;}
 
 /*  Modules  */
 #rt-mainbody-surround .plusbox {background: url("../images/module-content-bg.jpg") repeat scroll 0 0 transparent;color: #78A92D;}
