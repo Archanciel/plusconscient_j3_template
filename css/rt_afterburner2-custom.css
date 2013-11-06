@@ -110,6 +110,11 @@ ul.latestnewsplusbox li:hover {
   color: #78A92D; /* not working */
 }
 
+/* JPS 11.10.2013 */
+.component-content .page-header {
+    padding: 10px 0 0;
+}
+
 /*  Typography  */
 body {color: #ADD8F0;}
 h1, h2, h3, h4, h5, h6 {color: #B7DD7E;}
