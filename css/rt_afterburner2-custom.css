@@ -119,6 +119,10 @@ ul.latestnewsplusbox li:hover {
     line-height: 1.5em;
 }
 
+.component-content .article-info { /* reduces gap between article content and author / creation date info */
+    margin-top: 3px;
+}
+
 /*  Typography  */
 body {color: #ADD8F0;}
 h1, h2, h3, h4, h5, h6 {color: #B7DD7E;}
