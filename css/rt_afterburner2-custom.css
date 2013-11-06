@@ -116,7 +116,7 @@ ul.latestnewsplusbox li:hover {
 }
 
 .font-size-is-default, .font-size-is-small, .font-size-is-large { /* reduces article content line spacing */
-    line-height: 1.5em;
+    line-height: 1.4em;
 }
 
 .component-content .article-info { /* reduces gap between article content and author / creation date info */
