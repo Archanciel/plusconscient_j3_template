@@ -110,9 +110,15 @@ ul.latestnewsplusbox li:hover {
   color: #78A92D; /* not working */
 }
 
-/* JPS 11.10.2013 */
+/* JPS 6.11.2013 */
 .component-content .page-header { /* reduces article title bottom padding */
     padding: 10px 0 0;
+}
+
+.component-content .page-header a { /* article title like on original site */
+    font-family: Arial,Helvetica,Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .font-size-is-default, .font-size-is-small, .font-size-is-large { /* reduces article content line spacing */
