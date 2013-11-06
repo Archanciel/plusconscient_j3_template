@@ -111,8 +111,12 @@ ul.latestnewsplusbox li:hover {
 }
 
 /* JPS 11.10.2013 */
-.component-content .page-header {
+.component-content .page-header { /* reduces article title bottom padding */
     padding: 10px 0 0;
+}
+
+.font-size-is-default, .font-size-is-small, .font-size-is-large { /* reduces article content line spacing */
+    line-height: 1.5em;
 }
 
 /*  Typography  */
