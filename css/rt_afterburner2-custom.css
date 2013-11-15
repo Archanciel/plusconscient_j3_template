@@ -22,8 +22,8 @@ body {background-attachment: fixed;background-color: #0C3045;background-image: u
 #rt-accessibility #rt-buttons .large .button:after {content: "+";font-size: 2em;margin-top: -5px;}
 #rt-accessibility #rt-buttons .button {background-color: #335533;height: 2em;line-height: 2em;padding: 0px;text-align: center;width: 40px;}
 #rt-accessibility #rt-buttons .button:hover {background: none repeat scroll 0px 0px #00810B;box-shadow: 0px 1px 2px #B7DD7E inset;}
-#rt-sidebar-a .rt-block {margin:10px -10px 10px 15px;}
-#rt-sidebar-b .rt-block {margin:10px 15px 10px -10px;}
+#rt-sidebar-a .rt-block {margin:15px 0px 10px 15px;}
+#rt-sidebar-b .rt-block {margin:15px 15px 10px 0px;}
 
 
 /*  Menu  */
