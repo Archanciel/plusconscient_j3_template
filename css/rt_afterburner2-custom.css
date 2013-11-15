@@ -16,6 +16,15 @@ body {background-attachment: fixed;background-color: #0C3045;background-image: u
 .rt-container {background:none rgba(95, 177, 227, 0.4);}
 #rt-top .rt-container {border-radius: 15px 15px 0px 0px;overflow:hidden;}
 .component-content p {text-align:justify;}  /* main content justified text  */
+#rt-header .rt-container { background: url("../images/item-center.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0); }
+#rt-accessibility {color: #FFFFFF;font-size: 0.9em;line-height: 1.2em;padding-top:2px;}
+#rt-accessibility #rt-buttons .small .button:after {content: "-";font-size: 3em;margin-top: -5px;}
+#rt-accessibility #rt-buttons .large .button:after {content: "+";font-size: 2em;margin-top: -5px;}
+#rt-accessibility #rt-buttons .button {background-color: #335533;height: 2em;line-height: 2em;padding: 0px;text-align: center;width: 40px;}
+#rt-accessibility #rt-buttons .button:hover {background: none repeat scroll 0px 0px #00810B;box-shadow: 0px 1px 2px #B7DD7E inset;}
+#rt-sidebar-a .rt-block {margin:10px -10px 10px 15px;}
+#rt-sidebar-b .rt-block {margin:10px 15px 10px -10px;}
+
 
 /*  Menu  */
 .gf-menu {background: none repeat scroll 0 0 transparent;border-radius: 0 0 0 0;display: inline-block;list-style: none outside none;margin: 0;box-shadow: none;}
@@ -147,9 +156,11 @@ h2 a:hover {color: #94E042;text-decoration: none;}
 .plusbox .module-title {background: url("../images/module-header.jpg") repeat scroll 0px 0px transparent;border-radius: 5px 5px 0px 0px;margin: -15px -15px 0px;padding: 0px 15px;}
 .plusbox .module-title h2.title {color:#000000;font-weight:normal;font-size:1em;font-variant:small-caps;background: url("../images/module-header-icon.png") no-repeat scroll 0 50% transparent;padding-left:25px;}
 .menu-block .rt-mini-icon[class^="icon-"], .rt-mini-icon[class*=" icon-"] {background-color: #335533;font-size: 1.5em;height: 30px;line-height: 30px;margin-right: 5px;margin-top: 5px;width: 30px;}
+.rt-block.fontsizer-block {margin:0; padding:0 10px 0 0; float:right; height:40px;}
 
 /*  Social Media  */
 #rt-header .rt-grey:hover {background: none repeat scroll 0 0 #00810B;box-shadow: 0 1px 2px #B7DD7E inset;}
+.rt-block .socialicons {margin-left:8px;}
 
 /*  Breadcrumbs content-top */
 #rt-content-top .breadcrumb li, #rt-content-top [class^="breadcrumb"] li {float: left;list-style: none outside none;margin-right: 10px;}
