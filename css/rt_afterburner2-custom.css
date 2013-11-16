@@ -87,12 +87,12 @@ ul.menu li {
 }
 
 .component-content .column-1 {
-  padding-right: 11px;
+  padding-right: 12px;
 }
 
-.component-content .column-2 {
+/* .component-content .column-2 {
   padding-left: 10px;
-}
+} */
 
 /* JPS 11.10.2013 */
 ul.latestnewsplusbox {
