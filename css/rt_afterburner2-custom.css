@@ -138,6 +138,15 @@ ul.latestnewsplusbox li:hover {
     margin-top: 3px;
 }
 
+/* JPS 16.11.2013 */
+.plusbox .module-title {
+    height: 30px;  /* height like j1.5 templ */
+}
+
+.plusbox .module-content {
+    padding-top: 14px;  /* required by increasing modue titla height */
+}
+
 /*  Typography  */
 body {color: #ADD8F0;}
 h1, h2, h3, h4, h5, h6 {color: #B7DD7E;}
@@ -154,7 +163,7 @@ h2 a:hover {color: #94E042;text-decoration: none;}
 #rt-mainbody-surround .plusbox {background: url("../images/module-content-bg.jpg") repeat scroll 0 0 transparent;color: #78A92D;}
 .plusbox {border-radius: 10px 10px 10px 10px;border: 2px solid #BEBEBE;box-shadow:1px 1px 2px #000000;}
 .plusbox .module-title {background: url("../images/module-header.jpg") repeat scroll 0px 0px transparent;border-radius: 5px 5px 0px 0px;margin: -15px -15px 0px;padding: 0px 15px;}
-.plusbox .module-title h2.title {color:#000000;font-weight:normal;font-size:1em;font-variant:small-caps;background: url("../images/module-header-icon.png") no-repeat scroll 0 50% transparent;padding-left:25px;}
+.plusbox .module-title h2.title {color:#000000;font-weight:normal;font-size:1em;font-variant:small-caps;background: url("../images/module-header-icon.png") no-repeat scroll 0 80% transparent;padding-top: 7px;padding-left:25px;}
 .menu-block .rt-mini-icon[class^="icon-"], .rt-mini-icon[class*=" icon-"] {background-color: #335533;font-size: 1.5em;height: 30px;line-height: 30px;margin-right: 5px;margin-top: 5px;width: 30px;}
 .rt-block.fontsizer-block {margin:0; padding:0 10px 0 0; float:right; height:40px;}
 
