@@ -148,6 +148,11 @@ ul.latestnewsplusbox li:hover {
     text-align: center;  /* center font sizer text */
 }
 
+/* JPS 19.11.2013 */
+.fontsizer-block .rt-desc {
+    margin-top: 14px;   /* if no font sizer text, i.e. rt_afterburner2\language\en-GB\en-GB.tpl_rt_afterburner2.ini TEXT_SIZE="" ! */
+}
+
 /*  Typography  */
 body {color: #ADD8F0;}
 h1, h2, h3, h4, h5, h6 {color: #B7DD7E;}
