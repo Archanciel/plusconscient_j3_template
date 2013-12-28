@@ -307,17 +307,32 @@ ul.latestnewsplusbox li:hover {
 
 /* JPS 28.12.2013 */
 
+.font-family-helvetica {  /* redefining the default font */
+  font-family: Tahoma, Arial,Helvetica,Sans-Serif;
+}
+
 article h2 {  /* article title font */
   font-family: Arial,Helvetica,Sans-Serif;
 }
 
-article p {  /* article body font */
+.logo-text {  /* "parce que l'information ..." font */
+  font-family: Helvetica,Arial,Sans-Serif;
+}
+
+/*
+article p {  article body font
   font-family: Tahoma, Arial,Helvetica,Sans-Serif;
 }
 
-.module-title .title {  /* module title font */
+.module-title .title {  module title font
   font-family: Tahoma, Arial,Helvetica,Sans-Serif;
 }
+
+.breadcrumbnomarginbottom li {  breadcrumb font
+  font-family: Tahoma, Arial,Helvetica,Sans-Serif;
+}
+*/
+
 
 /*  Typography  */
 
