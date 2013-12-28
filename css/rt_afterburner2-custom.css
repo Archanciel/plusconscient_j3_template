@@ -305,9 +305,21 @@ ul.latestnewsplusbox li:hover {
 
 }
 
+/* JPS 28.12.2013 */
 
+article h2 {  /* article title font */
+  font-family: Arial,Helvetica,Sans-Serif;
+}
 
-/*  Typography  */
+article p {  /* article body font */
+  font-family: Tahoma, Arial,Helvetica,Sans-Serif;
+}
+
+.module-title .title {  /* module title font */
+  font-family: Tahoma, Arial,Helvetica,Sans-Serif;
+}
+
+/;*  Typography  */
 
 body {color: #ADD8F0;}
 
