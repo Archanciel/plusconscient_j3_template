@@ -38,11 +38,11 @@ body {background-attachment: fixed;background-color: #0C3045;background-image: u
 
 #rt-accessibility {color: #FFFFFF;font-size: 0.9em;line-height: 1.2em;padding-top:2px;}
 
-#rt-accessibility #rt-buttons .small .button:after {content: "-";font-size: 3em;margin-top: -7px;}
+#rt-accessibility #rt-buttons .small .button:after {content: "-";font-size: 3em;margin-top: -7px;height: 18px;}
 
-#rt-accessibility #rt-buttons .large .button:after {content: "+";font-size: 2em;margin-top: -5px;}
+#rt-accessibility #rt-buttons .large .button:after {content: "+";font-size: 1.8em;margin-top: -0.4em;height: 18px;}
 
-#rt-accessibility #rt-buttons .button {background-color: #335533;height: 2em;line-height: 2em;padding: 0px;text-align: center;width: 40px;}
+#rt-accessibility #rt-buttons .button {background-color: #335533;line-height: 2em;padding: 0px;text-align: center;width: 40px;height: 18px;}
 
 #rt-accessibility #rt-buttons .button:hover {background: none repeat scroll 0px 0px #00810B;box-shadow: 0px 1px 2px #B7DD7E inset;}
 
@@ -83,7 +83,7 @@ body {background-attachment: fixed;background-color: #0C3045;background-image: u
 
 .gf-menu.l1 > li > .item {border-right: none;}
 
-.plusbox ul.menu li a, .plusbox ul.menu li .item, .plusbox ul.menu li .separator {background: url("../images/arrow-bullet.png") no-repeat scroll 0 50% transparent;color: #78A92D;display: block;font-family: Tahoma,Arial,Helvetica,Sans-Serif;font-size: 12px;font-weight: normal;line-height: 1.2em;padding-left: 15px;}
+.plusbox ul.menu li a, .plusbox ul.menu li .item, .plusbox ul.menu li .separator {background: url("../images/arrow-bullet.png") no-repeat scroll 0 50% transparent;color: #78A92D;display: block;font-size: 12px;font-weight: normal;line-height: 1.2em;padding-left: 15px;}
 
 .plusbox ul.menu li a:hover, .plusbox ul.menu li:hover .item, .plusbox ul.menu li:hover .separator {color: #D6ECB6; text-decoration:underline;}
 
@@ -121,7 +121,7 @@ ul.menu li.active.current > a, ul.menu li.active.current > .item, ul.menu li.act
 
 /* JPS 04.10.2013 */
 
-.gf-menu .item {
+.gf-menu .item {  /* drop-down menu items */
 
     cursor: pointer;
 
@@ -204,8 +204,6 @@ ul.latestnewsplusbox li {
   color: #D6ECB6;
 
   display: block;
-
-  font-family: Tahoma,Arial,Helvetica,Sans-Serif;
 
   font-size: 12px;
 
@@ -307,7 +305,7 @@ ul.latestnewsplusbox li:hover {
 
 /* JPS 28.12.2013 */
 
-.font-family-helvetica {  /* redefining the default font */
+.font-family-helvetica {  /* redefining the site default font */
   font-family: Tahoma, Arial,Helvetica,Sans-Serif;
 }
 
@@ -559,4 +557,5 @@ div.rt-prefix-10 {padding-left: 900px;}
 div.rt-prefix-11 {padding-left: 990px;}
 
 }
+
 
