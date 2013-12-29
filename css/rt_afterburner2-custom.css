@@ -1,16 +1,9 @@
  /**
-
  * @package   Afterburner2 Template - RocketTheme
-
  * @version   1.0 April 2013
-
  * @author    3cellhosting http://www.3cellhosting.com
-
  * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
-
 */
-
-
 
 /*  Main Layout Changes  */
 
@@ -49,9 +42,6 @@ body {background-attachment: fixed;background-color: #0C3045;background-image: u
 #rt-sidebar-a .rt-block {margin:15px 0px 10px 15px;}
 
 #rt-sidebar-b .rt-block {margin:15px 15px 10px 0px;}
-
-
-
 
 /*  Menu  */
 
@@ -97,210 +87,116 @@ ul.menu li.active.current > a, ul.menu li.active.current > .item, ul.menu li.act
 
 .gf-menu .dropdown {padding: 0;} /* removes top and bottom padding from dropdown menus */
 
-
-
 /* JPS 01.10.2013 */
 
 .gf-menu .dropdown ul li.active > .item {
-
     color: #38FF49;
-
 }
-
-
 
 .gf-menu .dropdown ul li .item {
-
     margin-bottom: 1px;
-
     margin-top: 1px;
-
 }
-
-
 
 /* JPS 04.10.2013 */
 
 .gf-menu .item {  /* drop-down menu items */
-
     cursor: pointer;
-
     display: block;
-
     font-family: Arial,Helvetica,sans-serif;
-
     font-size: 13px;
-
     line-height: 19px;
-
     outline: 0 none;
-
     padding: 8px 12px;
-
     text-align: left;
-
     text-decoration: none;
-
 }
-
-
 
 /* JPS 07.10.2013 */
 
 .plusbox ul.menu {
-
     margin: -6px;
-
 }
-
-
 
 ul.menu li {
-
     margin-bottom: 5px;
-
 }
-
-
 
 /* JPS 08.10.2013 */
 
 .plusbox ul ul {
-
     padding: 5px 0 0;
-
 }
-
-
 
 .component-content .column-1 {
-
   padding-right: 12px;
-
 }
-
-
 
 /* JPS 11.10.2013 */
 
 ul.latestnewsplusbox {
-
     margin-bottom: -6px;
-
     margin-left: 0;
-
     margin-top: -6px;
-
 }
-
-
 
 ul.latestnewsplusbox li {
-
   background: url("../images/arrow-bullet.png") no-repeat scroll 0 50% transparent;
-
   list-style-type: none;
-
   color: #D6ECB6;
-
   display: block;
-
   font-size: 12px;
-
   font-weight: normal;
-
   line-height: 14.4px;
-
   margin-left: -6px;
-
   padding-left: 15px;
-
   padding-bottom: 4px;
-
 }
-
-
 
 ul.latestnewsplusbox li:hover {
-
   color: #78A92D; /* not working */
-
 }
-
-
 
 /* JPS 6.11.2013 */
 
 .component-content .page-header { /* reduces article title bottom padding */
-
     padding: 10px 0 0;
-
 }
-
-
 
 .component-content .page-header a { /* article title like on original site */
-
     font-family: Arial,Helvetica,Sans-serif;
-
     font-size: 22px;
-
     font-weight: 400;
-
 }
-
-
 
 .font-size-is-default, .font-size-is-small, .font-size-is-large { /* reduces article content line spacing */
-
     line-height: 1.4em;
-
 }
-
-
 
 .component-content .article-info { /* reduces gap between article content and author / creation date info */
-
     margin-top: 3px;
-
 }
-
-
 
 /* JPS 16.11.2013 */
 
 .plusbox .module-title {
-
     height: 30px;  /* height like j1.5 templ */
-
 }
-
-
 
 .plusbox .module-content {
-
     padding-top: 14px;  /* required by increasing modue titla height */
-
 }
-
-
 
 /* JPS 17.11.2013 */
 
 .rt-desc {
-
     text-align: center;  /* center font sizer text */
-
 }
-
-
 
 /* JPS 19.11.2013 */
 
 .fontsizer-block .rt-desc {
-
     margin-top: 14px;   /* if no font sizer text, i.e. rt_afterburner2\language\en-GB\en-GB.tpl_rt_afterburner2.ini TEXT_SIZE="" ! */
-
 }
 
 /* JPS 28.12.2013 */
@@ -354,8 +250,6 @@ h2 a:hover {color: #94E042;text-decoration: none;}
 
 #rt-mainbody-surround .title, #rt-mainbody-surround .component-content h2 {line-height:1.2em;}
 
-
-
 /*  Modules  */
 
 #rt-mainbody-surround .plusbox {background: url("../images/module-content-bg.jpg") repeat scroll 0 0 transparent;color: #78A92D;}
@@ -370,91 +264,63 @@ h2 a:hover {color: #94E042;text-decoration: none;}
 
 .rt-block.fontsizer-block {margin:0; padding:0 10px 0 0; float:right; height:40px;}
 
-
-
 /*  Social Media  */
 
 #rt-header .rt-grey:hover {background: none repeat scroll 0 0 #00810B;box-shadow: 0 1px 2px #B7DD7E inset;}
 
 .rt-block .socialicons {margin-left:8px;}
 
-
-
 /*  Breadcrumbs content-top */
 
 #rt-content-top .breadcrumb li, #rt-content-top [class^="breadcrumb"] li {float: left;list-style: none outside none;margin-right: 10px;}
 
-
-
-
-
 /* Large Display */
 
 @media (min-width: 1200px) {
-
   .component-content .cols-2 .column-1 {float: left;width: 48%;}
   .items-row.cols-2 {background:url("../images/blog-col-separator.png") repeat-y scroll 50% 0 transparent;}
 } 
 
-
-
 /* Desktop */
 
 @media (min-width: 960px) and (max-width: 1199px) {
-
   .component-content .cols-2 .column-1 {float: left;width: 48%;}
   .items-row.cols-2 {background:url("../images/blog-col-separator.png") repeat-y scroll 50% 0 transparent;}
-
 }
-
-     
 
 /* Tablets */
 
 @media (min-width: 768px) and (max-width: 959px) {
-
   .component-content .cols-2 .column-1 {float: left;width: 48%;}
   .items-row.cols-2 {background:url("../images/blog-col-separator.png") repeat-y scroll 50% 0 transparent;}
 }
 
-     
-
 /* Smartphones to Tablets */
 
 @media (min-width: 481px) and (max-width: 767px) {
-
-    h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.logo-name a:hover {color: #E4EADC !important;font-family: Tahoma,Arial,Helvetica,Sans-Serif;font-size: 1.4em;font-style: normal;    font-weight: bold;margin: 0;padding: 0;text-decoration: none;} 
+  h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.logo-name a:hover {color: #E4EADC !important;
+  font-family: Tahoma,Arial,Helvetica,Sans-Serif;font-size: 1.4em;font-style: normal;font-weight: bold;margin: 0;padding: 0;text-decoration: none;} 
 
   #headerlogo {position:absolute;top:20%;width:100%;}
 
   .component-content .cols-2 .column-1 {border-right: none;float: left;width: 50%;}
-
- 
-
 }
-
-     
-
-
 
 /* Smartphones */
 
 @media (max-width: 480px) {
-
-    h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.logo-name a:hover {color: #E4EADC !important;font-family: Tahoma,Arial,Helvetica,Sans-Serif;font-size: 1.4em;font-style: normal;    font-weight: bold;margin: 0;padding: 0;text-decoration: none;} 
+  h1.logo-name, h1.logo-name a, h1.logo-name a:link, h1.logo-name a:visited, h1.logo-name a:hover {color: #E4EADC !important;
+  font-family: Tahoma,Arial,Helvetica,Sans-Serif;font-size: 1.4em;font-style: normal;font-weight: bold;margin: 0;padding: 0;text-decoration: none;} 
 
   #headerlogo {position:absolute;top:20%;width:100%;}
 
-#slogan-text {font-weight: bold;margin: 20px 0px;text-align: center;width: 100%;font-size:0.7em;color:#ffffff;}
+  #slogan-text {font-weight: bold;margin: 20px 0px;text-align: center;width: 100%;font-size:0.7em;color:#ffffff;}
 
   .component-content .cols-2 .column-1 {border-right: none;float: left;width: 50%;}
   .fontsizer-block {display:none;}
-
-
+}
 
 /*  Constrain template width   */
-
-}
 
 @media only screen and (min-width: 1080px) {
 
