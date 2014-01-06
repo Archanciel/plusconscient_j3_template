@@ -163,10 +163,11 @@ ul.latestnewsplusbox li:hover {
     padding: 10px 0 0;
 }
 
-.component-content .page-header a { /* article title like on original site */
+.component-content .page-header a, h2.item-title  { /* article title like on original site,, second rule applies to featured articles */
     font-family: Arial,Helvetica,Sans-serif;
     font-size: 22px;
     font-weight: 400;
+	line-height: 24px;
 }
 
 .font-size-is-default, .font-size-is-small, .font-size-is-large { /* reduces article content line spacing */
@@ -205,9 +206,11 @@ ul.latestnewsplusbox li:hover {
   font-family: Tahoma, Arial,Helvetica,Sans-Serif;
 }
 
+/*
 article h2 {  /* article title font */
   font-family: Arial,Helvetica,Sans-Serif;
 }
+*/
 
 .logo-text {  /* "parce que l'information ..." font */
   font-family: Helvetica,Arial,Sans-Serif;
