@@ -23,6 +23,7 @@ $info    = $this->item->params->get('info_block_position', 0);
 
 <?php if ($params->get('show_title')) : ?>
 	<h2 class="item-title">
+	<img src="./templates/rt_afterburner2/images/PostHeaderIcon.png" width="26px" />
 	<?php if ($params->get('link_titles') && $params->get('access-view')) : ?>
 		<a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)); ?>"> <?php echo $this->escape($this->item->title); ?></a>
 	<?php else : ?>
