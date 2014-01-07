@@ -253,7 +253,7 @@ h2 a {color: #94E042;text-decoration: underline;}
 
 h2 a:hover {color: #94E042;text-decoration: none;}
 
-#rt-mainbody-surround .title, #rt-mainbody-surround .component-content h2 {line-height:1.2em;}
+#rt-mainbody-surround .title, #rt-mainbody-surround .component-content h2 {line-height:1.2em; /* overriden by item-title class below !! */}
 
 /*  Modules  */
 
