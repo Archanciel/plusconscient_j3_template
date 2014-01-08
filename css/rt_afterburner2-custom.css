@@ -205,7 +205,7 @@ ul.latestnewsplusbox li:hover {
     font-family: Arial,Helvetica,Sans-serif;
     font-size: 22px;
     font-weight: 400;
-	line-height: 27px !important; /* this class rule will have precedence on id rules which set the line-height to 1.2em */
+	line-height: 28px !important; /* this class rule will have precedence on id rules which set the line-height to 1.2em */
 }
 
 /*
