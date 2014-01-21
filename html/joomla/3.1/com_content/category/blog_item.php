@@ -19,7 +19,27 @@ JHtml::_('behavior.framework');
 	<span class="label label-warning"><?php echo JText::_('JUNPUBLISHED'); ?></span>
 <?php endif; ?>
 
-<?php echo JLayoutHelper::render('joomla.content.blog_style_default_item_title', $this->item); ?>
+<?php // echo JLayoutHelper::render('joomla.content.blog_style_default_item_title', $this->item); // commented out code, replaced by next lines ! ?>
+
+<?php if ($params->get('show_title') || $displayData->state == 0 || ($params->get('show_author') && !empty($displayData->author ))) : ?>
+	<div class="page-header">
+
+		<?php if ($params->get('show_title')) : ?>
+			<h2><img src="./templates/rt_afterburner2/images/PostHeaderIcon.png" width="26px" />
+				<?php if ($params->get('link_titles') && $params->get('access-view')) : ?>
+					<a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)); ?>">
+					<?php echo $this->escape($this->item->title); ?></a>
+				<?php else : ?>
+					<?php echo $this->escape($this->item->title); ?>
+				<?php endif; ?>
+			</h2>
+		<?php endif; ?>
+
+		<?php if ($this->item->state == 0) : ?>
+			<span class="label label-warning"><?php echo JText::_('JUNPUBLISHED'); ?></span>
+		<?php endif; ?>
+	</div>
+<?php endif; // end of replacement of commented code above ?>
 
 <?php echo JLayoutHelper::render('joomla.content.icons', array('params' => $params, 'item' => $this->item, 'print' => false)); ?>
 
