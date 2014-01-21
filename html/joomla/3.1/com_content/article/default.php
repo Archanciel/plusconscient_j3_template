@@ -19,10 +19,12 @@ $canEdit = $params->get('access-edit');
 $user    = JFactory::getUser();
 $info    = $params->get('info_block_position', 0);
 JHtml::_('behavior.caption');
+$useDefList = ($params->get('show_modify_date') || $params->get('show_publish_date') || $params->get('show_create_date')
+	|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author'));
 
 ?>
 <div class="item-page<?php echo $this->pageclass_sfx?>">
-	<?php if ($this->params->get('show_page_heading') && $params->get('show_title')) : ?>
+	<?php if ($this->params->get('show_page_heading', 1)) : ?>
 	<div class="page-header">
 		<h1> <?php echo $this->escape($this->params->get('page_heading')); ?> </h1>
 	</div>
@@ -32,6 +34,12 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 	echo $this->item->pagination;
 }
 ?>
+	<?php if (!$useDefList && $this->print) : ?>
+		<div id="pop-print" class="btn">
+			<?php echo JHtml::_('icon.print_screen', $this->item, $params); ?>
+		</div>
+		<div class="clearfix"> </div>
+	<?php endif; ?>
 	<?php if ($params->get('show_title') || $params->get('show_author')) : ?>
 	<div class="page-header">
 		<h2>
@@ -39,8 +47,9 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 				<span class="label label-warning"><?php echo JText::_('JUNPUBLISHED'); ?></span>
 			<?php endif; ?>
 			<?php if ($params->get('show_title')) : ?>
+				<img src="./templates/rt_afterburner2/images/PostHeaderIcon.png" width="26px" />
 				<?php if ($params->get('link_titles') && !empty($this->item->readmore_link)) : ?>
-					<img src="../images/PostHeaderIcon.png" width="26px" /><a href="<?php echo $this->item->readmore_link; ?>"> <?php echo $this->escape($this->item->title); ?></a>
+					<a href="<?php echo $this->item->readmore_link; ?>"> <?php echo $this->escape($this->item->title); ?></a>
 				<?php else : ?>
 					<?php echo $this->escape($this->item->title); ?>
 				<?php endif; ?>
@@ -66,13 +75,14 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 			</ul>
 		</div>
 		<?php endif; ?>
-		<?php else : ?>
-		<div class="pull-right">
-		<?php echo JHtml::_('icon.print_screen', $this->item, $params); ?>
-		</div>
+	<?php else : ?>
+		<?php if ($useDefList) : ?>
+			<div id="pop-print" class="btn">
+				<?php echo JHtml::_('icon.print_screen', $this->item, $params); ?>
+			</div>
+		<?php endif; ?>
 	<?php endif; ?>
-<?php $useDefList = ($params->get('show_modify_date') || $params->get('show_publish_date') || $params->get('show_create_date')
-	|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author')); ?>
+
 	<?php if ($useDefList && ($info == 0 || $info == 2)) : ?>
 		<div class="article-info muted">
 			<dl class="article-info">
@@ -143,6 +153,12 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 			<?php endif; ?>
 			</dl>
 		</div>
+	<?php endif; ?>
+
+	<?php if ($params->get('show_tags', 1) && !empty($this->item->tags)) : ?>
+		<?php $this->item->tagLayout = new JLayoutFile('joomla.content.tags'); ?>
+
+		<?php echo $this->item->tagLayout->render($this->item->tags->itemTags); ?>
 	<?php endif; ?>
 
 	<?php if (!$params->get('show_intro')) : echo $this->item->event->afterDisplayTitle; endif; ?>
@@ -226,7 +242,7 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 			<?php if ($params->get('show_create_date')) : ?>
 				<dd class="create">
 					<span class="icon-calendar"></span>
-					<?php echo JText::sprintf('COM_CONTENT_CREATED_DATE_ON', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
+					<?php echo JText::sprintf('COM_CONTENT_CREATED_DATE_ON', JHtml::_('date', $this->item->created, JText::_('DATE_FORMAT_LC3'))); ?>
 				</dd>
 			<?php endif; ?>
 			<?php if ($params->get('show_modify_date')) : ?>
@@ -252,13 +268,13 @@ if (!empty($this->item->pagination) && $this->item->pagination && $this->item->p
 	<?php if (isset($urls) && ((!empty($urls->urls_position) && ($urls->urls_position == '1')) || ($params->get('urls_position') == '1'))) : ?>
 	<?php echo $this->loadTemplate('links'); ?>
 	<?php endif; ?>
-	<?php //optional teaser intro text for guests ?>
+	<?php // Optional teaser intro text for guests ?>
 	<?php elseif ($params->get('show_noauth') == true && $user->get('guest')) : ?>
 	<?php echo $this->item->introtext; ?>
 	<?php //Optional link to let them register to see the whole article. ?>
 	<?php if ($params->get('show_readmore') && $this->item->fulltext != null) :
 		$link1 = JRoute::_('index.php?option=com_users&view=login');
-		$link = new JURI($link1);?>
+		$link = new JUri($link1);?>
 	<p class="readmore">
 		<a href="<?php echo $link; ?>">
 		<?php $attribs = json_decode($this->item->attribs); ?>
