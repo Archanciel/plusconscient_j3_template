@@ -18,6 +18,12 @@ $gantry->init();
 // get the current preset
 $gpreset = str_replace(' ','',strtolower($gantry->get('name')));
 
+// overloading core joomla translations
+
+$language =& JFactory::getLanguage();
+$language->load('mod_login'); // this loads the original
+$language->load('mod_login', dirname(__FILE__), $language->getTag(), true); // this loads our own version
+
 ?>
 <!doctype html>
 <html xml:lang="<?php echo $gantry->language; ?>" lang="<?php echo $gantry->language;?>" >

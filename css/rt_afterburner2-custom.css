@@ -232,6 +232,29 @@ article p {  article body font
 }
 */
 
+/* Customizing login form. Requires that plusbox-login is added 
+in the Module Class Suffix area of the login module ! */
+
+.plusbox-login label {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.plusbox-login input.inputbox { /* does not impact input class="button" */
+    height: 16px;
+}
+
+.plusbox-login p {
+    margin: 0 0 0px;
+}
+
+.plusbox-login .module-content {
+    padding-top: 0;
+}
+
+.rt-block.plusbox-login {
+    height: 241px;
+}
 
 /*  Typography  */
 
