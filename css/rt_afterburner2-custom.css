@@ -261,6 +261,24 @@ in the Module Class Suffix area of the login module ! */
     height: 236px;
 }
 
+/* sizing search module after upgr to Jopomla 3.4.3*/
+
+#mod-search-searchword{
+	width: 142px;
+}
+
+.plussearch {
+	padding-left: 0px;
+	padding-right: 0px;
+	height:  20px;
+}
+
+.inputbox.search-query {
+	padding-left: 11px;
+	padding-right: 11px;
+}
+
+
 /*  Typography  */
 
 body {color: #ADD8F0;}
