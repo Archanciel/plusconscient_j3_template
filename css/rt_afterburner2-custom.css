@@ -237,23 +237,28 @@ in the Module Class Suffix area of the login module ! */
 
 .plusbox-login label {
     font-size: 13px;
-    line-height: 13px;
+    line-height: 10px;
 }
 
 .plusbox-login input.inputbox { /* does not impact input class="button" */
-    height: 16px;
+    height: 12px;
 }
 
 .plusbox-login p {
     margin: 0 0 0px;
+	height: 41px;
 }
 
 .plusbox-login .module-content {
     padding-top: 0;
 }
 
+#form-login-remember p {
+    height: 36px;
+}
+
 .rt-block.plusbox-login {
-    height: 241px;
+    height: 236px;
 }
 
 /*  Typography  */
