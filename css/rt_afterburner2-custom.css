@@ -278,6 +278,31 @@ in the Module Class Suffix area of the login module ! */
 	padding-right: 11px;
 }
 
+/* styling j!mailert user preferences page */
+
+.jma_plugin_background  {
+	background: rgb(240, 240, 240);
+	color: rgb(0, 128, 0);
+}
+
+.jma_email_intro , .jmailalerts-wrapper .alert-block {
+	padding: 10px;
+	background: rgb(240, 240, 240);
+	color: rgb(0, 128, 0);
+	font-size: 14px;
+    font-weight: bold;
+	border-radius:5px;
+}
+
+.jma_table {
+	background: rgb(240, 240, 240);
+	color: rgb(0, 128, 0);
+	border-radius:5px;
+}
+
+.jmailalerts-wrapper .form-actions {
+	border-radius:5px;
+}
 
 /*  Typography  */
 
