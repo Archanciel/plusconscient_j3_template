@@ -304,6 +304,11 @@ in the Module Class Suffix area of the login module ! */
 	border-radius:5px;
 }
 
+.unsubscribed_alert {
+	color: rgb(0, 128, 0);
+    font-size: 13px;
+}
+
 /*  Typography  */
 
 body {color: #ADD8F0;}
