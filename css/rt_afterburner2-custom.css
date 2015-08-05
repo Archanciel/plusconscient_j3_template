@@ -309,6 +309,19 @@ in the Module Class Suffix area of the login module ! */
     font-size: 13px;
 }
 
+/* system front alerts */
+
+.alert-message {
+    font-size: 14px;
+	font-weight: bold;
+}
+
+h4.alert-heading {
+    font-size: 16px;
+	font-weight: bold;
+	color: rgb(0, 128, 0);
+}
+
 /*  Typography  */
 
 body {color: #ADD8F0;}
