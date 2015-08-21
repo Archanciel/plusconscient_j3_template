@@ -52,6 +52,8 @@ $language->load('mod_login', dirname(__FILE__), $language->getTag(), true); // t
 		if ($gantry->get('layout-mode', 'responsive') == 'responsive') $gantry->addScript('rokmediaqueries.js');
 
     ?>
+  <!-- Reuired script for addthis tracking to work (www.addthis.com/dashboard) -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=archanciel" async="async"></script>
 </head>
 <body <?php echo $gantry->displayBodyTag(); ?>>
     <?php /** Begin Top Surround **/ if ($gantry->countModules('top') or $gantry->countModules('header')) : ?>
